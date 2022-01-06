@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { getPokemonList } from '../services'
-import PokemonItem from '../components/PokemonItem';
 import { List, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
