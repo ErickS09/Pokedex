@@ -19,13 +19,17 @@ function Home() {
                 itemLayout="horizontal"
                 dataSource={state}
                 renderItem={pokemon => (
-                    <List.Item>
+                    <div className={styles.item}>
                         <List.Item.Meta
                             avatar={<Avatar src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/133704119/original/798ab218286c66085499f6e6c9e705b209e2b11c/answer-all-of-pokemon-questions.png" />}
-                            title={<Link to={`/detail/${pokemon.name}`}>{pokemon.url}</Link>}
-                            description={pokemon.name}
+                            title={<Link className={styles.title} to={`/detail/${pokemon.name}`}>{pokemon.url}</Link>}
+                            description={(
+                                <div className={styles['name-container']}>
+                                    <p className={styles.name}>{pokemon.name}</p>
+                                </div>
+                            )}
                         />
-                    </List.Item>
+                    </div>
 
                 )}
             />

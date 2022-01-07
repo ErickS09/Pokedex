@@ -2,3 +2,27 @@
     background-color: var(--base-color);
     padding: 16px 64px;
 }
+
+.item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: var(--primary-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.title {
+    color: var(--secondary-color)!important;
+}
+
+.name {
+color: var(--complementary-color);
+}
+
+.name-container {
+    padding: 4px;
+    background-color: var(--secondary-text-color);
+    display: inline-block;
+}
