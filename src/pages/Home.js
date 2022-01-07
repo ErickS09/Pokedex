@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     const [state, setState] = useState([])
     
+    
     useEffect(() => {
         getPokemonList().then((data) => setState(data.results))
     }, [])
