@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Detail from './pages/Detail';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import './App.css'
 
 function App() {
 
